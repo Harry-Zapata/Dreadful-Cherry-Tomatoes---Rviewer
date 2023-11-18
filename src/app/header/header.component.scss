@@ -1,0 +1,144 @@
+@media (min-width: 992px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .container,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+#peliculas {
+  display: grid;
+  //que me muestre 5 columnas y que se ajuste segun el tamaño de la pantalla
+  grid-template-columns: repeat(auto-fit, minmax(224px, 1fr));
+
+  gap: 40px;
+}
+#peliculas .col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 224px !important;
+  height: 299px !important;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-img-overlay {
+  padding: 0;
+  cursor: pointer;
+}
+
+.card-img-overlay h5,
+.card-img-overlay span,
+.card-img-overlay h6 {
+  width: 100%;
+  opacity: .8;
+  margin: 0;
+  background: #000;
+}
+
+.card-img-overlay span,
+.card-img-overlay h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16.41px;
+}
+
+.card-img-overlay span,
+.card-img-overlay h6 {
+  display: none;
+}
+
+.card-img-overlay:hover,
+.card-img-overlay:hover h5,
+.card-img-overlay:hover span,
+.card-img-overlay:hover h6 {
+  display: block;
+  padding-bottom: 0;
+}
+
+.card-img-overlay:hover {
+  //que se aga un poco mas grande
+
+}
+
+.my-pagination ::ng-deep .ngx-pagination li {
+  background: red;
+  opacity: .3;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  margin-left: 5px;
+}
+
+.my-pagination ::ng-deep li.pagination-previous,
+.my-pagination ::ng-deep li.pagination-next {
+  background: transparent !important;
+  font-size: 30px;
+  justify-content: center !important;;
+  align-items: baseline !important;
+  opacity: 1 !important;
+}
+
+.my-pagination ::ng-deep .ngx-pagination nav ul {
+  padding: 0 !important;
+}
+
+.my-pagination ::ng-deep .ngx-pagination .pagination-next a:after,
+.my-pagination ::ng-deep .ngx-pagination .pagination-next.disabled:after {
+  margin-left: 0 !important;
+}
+
+.my-pagination ::ng-deep .ngx-pagination .current {
+  opacity: 1 !important;
+  margin: 0 !important;
+  width: 32px !important;
+  height: 32px !important;
+  margin: auto 30px !important;
+}
+
+.my-pagination ::ng-deep .ngx-pagination li {
+  margin: auto 30px !important;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-pagination ::ng-deep .ngx-pagination .small-screen{
+  display: none;
+}
+
+.my-pagination ::ng-deep .ngx-pagination li a {
+  background: transparent;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}

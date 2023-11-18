@@ -1,0 +1,19 @@
+<div class="container-fluid bg-dark">
+  <img src="assets/img/logo/logo.png" alt="">
+</div>
+<nav class="navbar py-3">
+  <div class="container">
+    <form class="d-flex justify-content-center" [formGroup]="form">
+      <div class="input-group rounded">
+        <span class="input-group-text border-0 bg-white text-danger" id="search-addon">
+          <i class="fas fa-search"></i>
+        </span>
+        <input type="search" (input)="filtro()" formControlName="search" class="form-control border-0" placeholder="Titulo"
+          aria-label="Search" aria-describedby="search-addon" />
+      </div>
+    </form>
+  </div>
+</nav>
+<header>
+  <app-header [filtro]="valor"></app-header>
+</header>

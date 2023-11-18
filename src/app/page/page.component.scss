@@ -1,0 +1,43 @@
+@media (min-width: 992px) {
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+
+nav{
+  background: #c42521;
+}
+.form-control:focus{
+  box-shadow: none;
+}
+.input-group{
+  width: 94%;
+}
+.container-fluid img{
+  width: 249px;
+  height: 46px;
+  margin-left: 2%;
+}
+form{
+  width: 100%;
+}
